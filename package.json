@@ -1,0 +1,13 @@
+{
+	"name": "countries",
+	"description": "World countries",
+	"main": "index.js",
+	"version": "0.0.1",
+	"scripts": {
+		"build": "csv-parser ./countries.csv | JSONStream > ./countries.json"
+	},
+	"dependencies": {
+		"csv-parser": "^1.9.3",
+		"JSONStream": "^1.0.7"
+	}
+}
