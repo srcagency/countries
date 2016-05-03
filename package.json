@@ -7,7 +7,7 @@
 		"build:csv": "node ./build-csv-from-json.js",
 		"build:json": "node ./build-json-from-csv.js"
 	},
-	"dependencies": {
+	"devDependencies": {
 		"csv-parser": "^1.9.3",
 		"csv-write-stream": "^2.0.0",
 		"JSONStream": "^1.1.1",
