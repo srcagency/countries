@@ -4,10 +4,13 @@
 	"main": "index.js",
 	"version": "0.0.1",
 	"scripts": {
-		"build": "csv-parser ./countries.csv | JSONStream > ./countries.json"
+		"build:csv": "node ./build-csv-from-json.js",
+		"build:json": "node ./build-json-from-csv.js"
 	},
 	"dependencies": {
 		"csv-parser": "^1.9.3",
-		"JSONStream": "^1.0.7"
+		"csv-write-stream": "^2.0.0",
+		"JSONStream": "^1.1.1",
+		"through2-map": "^2.0.0"
 	}
 }
